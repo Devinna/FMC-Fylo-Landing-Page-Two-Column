@@ -1,1 +1,79 @@
 @import 'config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 2em;
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+h1,
+nav,
+.submit {
+  font-family: $font-stack;
+}
+img,
+input {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+p {
+  padding: 2em 1em;
+}
+form {
+  padding: 1.5em;
+}
+input {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+::placeholder {
+  opacity: 0.5;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      padding-left: 1.5em;
+    }
+  }
+  a {
+    color: $Very-Dark-Blue;
+  }
+}
+.logo {
+  width: 30%;
+  height: auto;
+}
+section {
+  img {
+    padding: 8em 0 4em 0;
+  }
+}
+.submit {
+  background-color: $Bright-Blue;
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  font-weight: 700;
+}

@@ -1,1 +1,116 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+h1,
+nav,
+.submit {
+  font-family: "Raleway", sans-serif;
+}
+
+img,
+input {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 2em 1em;
+}
+
+form {
+  padding: 1.5em;
+}
+
+input {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  padding-left: 1.5em;
+}
+
+nav a {
+  color: #070439;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+}
+
+section img {
+  padding: 8em 0 4em 0;
+}
+
+.submit {
+  background-color: #3065f8;
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  font-weight: 700;
+}
