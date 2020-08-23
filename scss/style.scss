@@ -9,7 +9,6 @@ body {
   padding: 2em;
   font-family: $font-body;
   font-size: 14px;
-  line-height: 1.5em;
 }
 h1,
 nav,
@@ -24,18 +23,25 @@ ul {
   list-style-type: none;
 }
 h1,
-p {
+h2,
+p,
+.link-center {
   text-align: center;
 }
 h1 {
+  line-height: 1.6em;
   font-size: 24px;
-  font-weight: 700;
+}
+h2 {
+  font-size: 16px;
+  padding-bottom: 1em;
 }
 a {
   text-decoration: none;
 }
 p {
   padding: 2em 1em;
+  line-height: 1.5em;
 }
 form {
   padding: 1.5em;
@@ -76,4 +82,19 @@ section {
   border-radius: 0.2em;
   color: white;
   font-weight: 700;
+}
+.left {
+  padding: 1em 0;
+  text-align: left;
+}
+.link-center {
+  display: block;
+  margin: 2em 6em;
+  border-bottom: 1px solid $Moderate-Cyan;
+  padding-bottom: 0.5em;
+  text-align: center;
+  color: $Moderate-Cyan;
+}
+
+.avatar {
 }
