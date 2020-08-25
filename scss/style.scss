@@ -6,14 +6,37 @@
   padding: 0;
 }
 body {
-  padding: 2em;
   font-family: $font-body;
   font-size: 14px;
 }
+.block {
+  display: block;
+}
+.bold {
+  font-weight: 700;
+}
+.small-text {
+  font-size: 7px;
+}
+.center {
+  text-align: center;
+}
 h1,
+h2,
 nav,
 .submit {
   font-family: $font-stack;
+}
+h1,
+h2 {
+  padding-bottom: 1em;
+}
+nav,
+#features,
+#team,
+#signin,
+footer {
+  padding: 2em;
 }
 img,
 input {
@@ -22,29 +45,22 @@ input {
 ul {
   list-style-type: none;
 }
-h1,
-h2,
-p,
-.link-center {
-  text-align: center;
-}
 h1 {
   line-height: 1.6em;
   font-size: 24px;
 }
 h2 {
   font-size: 16px;
-  padding-bottom: 1em;
 }
 a {
   text-decoration: none;
 }
 p {
-  padding: 2em 1em;
+  padding: 0 1em;
   line-height: 1.5em;
 }
 form {
-  padding: 1.5em;
+  padding: 1.8em 1.2em;
 }
 input {
   padding: 1em;
@@ -71,9 +87,14 @@ nav {
   width: 30%;
   height: auto;
 }
-section {
-  img {
-    padding: 8em 0 4em 0;
+.illustration {
+  padding: 3em 0 6em 0;
+}
+#team {
+  background-color: $Light-Grayish-Blue;
+  padding-bottom: 6em;
+  p {
+    padding: 0.5em 0;
   }
 }
 .submit {
@@ -81,20 +102,42 @@ section {
   border: none;
   border-radius: 0.2em;
   color: white;
-  font-weight: 700;
-}
-.left {
-  padding: 1em 0;
-  text-align: left;
 }
 .link-center {
   display: block;
-  margin: 2em 6em;
+  margin: 3em 6em;
   border-bottom: 1px solid $Moderate-Cyan;
   padding-bottom: 0.5em;
   text-align: center;
   color: $Moderate-Cyan;
 }
-
-.avatar {
+.card {
+  background-color: #fff;
+  margin: 0 2em;
+  padding: 1.7em 2.8em;
+  box-shadow: 100 gray;
+  font-size: 10px;
+  .author-info {
+    display: flex;
+    padding-top: 1em;
+    .avatar {
+      width: 36px;
+      border-radius: 50%;
+      padding-right: 0.8em;
+    }
+  }
+}
+#signin {
+  background-color: $Desaturated-Blue;
+  color: #fff;
+  padding-top: 4em;
+  p {
+    padding: 0 1.2em;
+  }
+  form {
+    padding: 2.5em;
+  }
+  input {
+    padding: 0.6em;
+  }
 }

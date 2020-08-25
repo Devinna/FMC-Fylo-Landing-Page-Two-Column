@@ -8,15 +8,44 @@
 }
 
 body {
-  padding: 2em;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
+.block {
+  display: block;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.small-text {
+  font-size: 7px;
+}
+
+.center {
+  text-align: center;
+}
+
 h1,
+h2,
 nav,
 .submit {
   font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  padding-bottom: 1em;
+}
+
+nav,
+#features,
+#team,
+#signin,
+footer {
+  padding: 2em;
 }
 
 img,
@@ -28,13 +57,6 @@ ul {
   list-style-type: none;
 }
 
-h1,
-h2,
-p,
-.link-center {
-  text-align: center;
-}
-
 h1 {
   line-height: 1.6em;
   font-size: 24px;
@@ -42,7 +64,6 @@ h1 {
 
 h2 {
   font-size: 16px;
-  padding-bottom: 1em;
 }
 
 a {
@@ -50,12 +71,12 @@ a {
 }
 
 p {
-  padding: 2em 1em;
+  padding: 0 1em;
   line-height: 1.5em;
 }
 
 form {
-  padding: 1.5em;
+  padding: 1.8em 1.2em;
 }
 
 input {
@@ -110,8 +131,17 @@ nav a {
   height: auto;
 }
 
-section img {
-  padding: 8em 0 4em 0;
+.illustration {
+  padding: 3em 0 6em 0;
+}
+
+#team {
+  background-color: #f6f6fe;
+  padding-bottom: 6em;
+}
+
+#team p {
+  padding: 0.5em 0;
 }
 
 .submit {
@@ -119,19 +149,53 @@ section img {
   border: none;
   border-radius: 0.2em;
   color: white;
-  font-weight: 700;
-}
-
-.left {
-  padding: 1em 0;
-  text-align: left;
 }
 
 .link-center {
   display: block;
-  margin: 2em 6em;
+  margin: 3em 6em;
   border-bottom: 1px solid #3c9f8f;
   padding-bottom: 0.5em;
   text-align: center;
   color: #3c9f8f;
+}
+
+.card {
+  background-color: #fff;
+  margin: 0 2em;
+  padding: 1.7em 2.8em;
+  -webkit-box-shadow: 100 gray;
+          box-shadow: 100 gray;
+  font-size: 10px;
+}
+
+.card .author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+}
+
+.card .author-info .avatar {
+  width: 36px;
+  border-radius: 50%;
+  padding-right: 0.8em;
+}
+
+#signin {
+  background-color: #585989;
+  color: #fff;
+  padding-top: 4em;
+}
+
+#signin p {
+  padding: 0 1.2em;
+}
+
+#signin form {
+  padding: 2.5em;
+}
+
+#signin input {
+  padding: 0.6em;
 }

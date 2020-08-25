@@ -36,17 +36,21 @@
     </nav>
     <main>
       <section id="features">
-        <img src="/images/illustration-1.svg" alt="access your file anywhere" />
+        <img
+          class="illustration"
+          src="/images/illustration-1.svg"
+          alt="access your file anywhere"
+        />
         <div class="text-wrapper">
-          <h1>
+          <h1 class="center">
             All your files in one secure location, accessible anywhere.
           </h1>
-          <p>
+          <p class="center">
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form class="signin" action="/">
+          <form action="/">
             <input
               type="email"
               name="email"
@@ -57,19 +61,29 @@
           </form>
         </div>
       </section>
+
+      <img
+        class="bg-curve"
+        src="/images/bg-curve-mobile.svg"
+        alt="bg-curve-mobile"
+      />
       <section id="team">
-        <img src="/images/illustration-2.svg" alt="work-together" />
+        <img
+          class="illustration"
+          src="/images/illustration-2.svg"
+          alt="work-together"
+        />
         <div class="text-wrapper">
-          <h2>Stay productive, wherever you are</h2>
-          <p class="left">
+          <h2 class="center">Stay productive, wherever you are</h2>
+          <p>
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
-          <p class="left">
+          <p>
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required!
           </p>
-          <a class="link-center" href="/">
+          <a class="link-center center" href="/">
             See how Fylo works
             <svg
               width="16"
@@ -112,7 +126,7 @@
             </svg>
           </a>
         </div>
-        <article>
+        <article class="card">
           <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
             <text
               transform="translate(-34 -25)"
@@ -124,7 +138,7 @@
               <tspan x="33" y="56">“</tspan>
             </text>
           </svg>
-          <p class="left">
+          <p>
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
@@ -136,29 +150,33 @@
               alt="avatar-testimonial"
             />
             <div>
-              <span>
+              <span class="block bold">
                 Kyle Burton
               </span>
-              <span>Founder & CEO, Huddle</span>
+              <span class="small-text">Founder & CEO, Huddle</span>
             </div>
           </div>
         </article>
       </section>
       <section id="signin">
-        <h2>Get early access today</h2>
-        <p>
+        <h2 class="center">Get early access today</h2>
+        <p class="center">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form class="signin" action="/">
+        <form action="/">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="email@example.com"
           />
-          <input class="submit" type="submit" value="Get Started For Free" />
+          <input
+            class="submit bold"
+            type="submit"
+            value="Get Started For Free"
+          />
         </form>
       </section>
     </main>
