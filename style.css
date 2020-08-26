@@ -43,8 +43,7 @@ h2 {
 nav,
 #features,
 #team,
-#signin,
-footer {
+#signin {
   padding: 2em;
 }
 
@@ -152,12 +151,23 @@ nav a {
 }
 
 .link-center {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3em 6em;
   border-bottom: 1px solid #3c9f8f;
   padding-bottom: 0.5em;
-  text-align: center;
   color: #3c9f8f;
+}
+
+.link-center span {
+  padding-right: 0.5em;
 }
 
 .card {
@@ -184,8 +194,8 @@ nav a {
 
 #signin {
   background-color: #585989;
-  color: #fff;
   padding-top: 4em;
+  color: #fff;
 }
 
 #signin p {
@@ -198,4 +208,41 @@ nav a {
 
 #signin input {
   padding: 0.6em;
+}
+
+footer {
+  background-color: #070439;
+  padding: 4em 3em;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .footer-content {
+  padding: 3em 0;
+}
+
+footer ul {
+  padding-bottom: 2em;
+}
+
+footer .contact-info,
+footer li {
+  padding-bottom: 1em;
+}
+
+footer .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact-info span {
+  padding-left: 1em;
 }
