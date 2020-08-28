@@ -71,9 +71,10 @@ input {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 6em;
   ul {
     display: flex;
-    align-items: center;
     li {
       padding-left: 1.5em;
     }
@@ -94,6 +95,11 @@ nav {
   padding-bottom: 6em;
   p {
     padding: 0.5em 0;
+  }
+  .text-wrapper {
+    p {
+      color: $Desaturated-Blue;
+    }
   }
 }
 .submit {
@@ -137,7 +143,7 @@ nav {
   padding-top: 4em;
   color: #fff;
   p {
-    padding: 0 1.2em;
+    color: $Light-Grayish-Blue;
   }
   form {
     padding: 2.5em;
@@ -169,6 +175,90 @@ footer {
     align-items: center;
     span {
       padding-left: 1em;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  nav,
+  #features,
+  #team,
+  #signin {
+    padding: 2em 4em;
+  }
+  nav {
+    font-size: 18px;
+    .logo {
+      width: 10%;
+      height: auto;
+    }
+    ul {
+      li {
+        padding-left: 3em;
+      }
+    }
+  }
+
+  #features,
+  #team,
+  #signin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    align-items: center;
+  }
+  .text-wrapper {
+    h1,
+    h2,
+    p {
+      text-align: left;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 400;
+      padding-bottom: 0.5em;
+    }
+    form {
+      padding: 1.8em 0;
+    }
+  }
+
+  .link-center {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .card {
+    margin: 0;
+    width: 50%;
+  }
+  #features {
+    form {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+  #signin {
+    .submit {
+      width: 40%;
+    }
+    .text-wrapper {
+      width: 80%;
+    }
+  }
+  .footer-grid {
+    padding-top: 1em;
+    display: flex;
+    .footer-content,
+    ul {
+      padding: 0;
+      padding-right: 10em;
+    }
+    address {
+      text-align: left;
     }
   }
 }

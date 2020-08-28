@@ -106,15 +106,16 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6em;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 nav ul li {
@@ -141,6 +142,10 @@ nav a {
 
 #team p {
   padding: 0.5em 0;
+}
+
+#team .text-wrapper p {
+  color: #585989;
 }
 
 .submit {
@@ -199,7 +204,7 @@ nav a {
 }
 
 #signin p {
-  padding: 0 1.2em;
+  color: #f6f6fe;
 }
 
 #signin form {
@@ -245,4 +250,85 @@ footer .contact-info {
 
 footer .contact-info span {
   padding-left: 1em;
+}
+
+@media (min-width: 1280px) {
+  nav,
+  #features,
+  #team,
+  #signin {
+    padding: 2em 4em;
+  }
+  nav {
+    font-size: 18px;
+  }
+  nav .logo {
+    width: 10%;
+    height: auto;
+  }
+  nav ul li {
+    padding-left: 3em;
+  }
+  #features,
+  #team,
+  #signin {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-wrapper h1,
+  .text-wrapper h2,
+  .text-wrapper p {
+    text-align: left;
+    padding: 0;
+  }
+  .text-wrapper h2 {
+    font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+  }
+  .text-wrapper form {
+    padding: 1.8em 0;
+  }
+  .link-center {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .card {
+    margin: 0;
+    width: 50%;
+  }
+  #features form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  #signin .submit {
+    width: 40%;
+  }
+  #signin .text-wrapper {
+    width: 80%;
+  }
+  .footer-grid {
+    padding-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-grid .footer-content,
+  .footer-grid ul {
+    padding: 0;
+    padding-right: 10em;
+  }
+  .footer-grid address {
+    text-align: left;
+  }
 }
