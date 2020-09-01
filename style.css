@@ -109,7 +109,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 6em;
 }
 
 nav ul {
@@ -199,20 +198,11 @@ nav a {
 
 #signin {
   background-color: #585989;
-  padding-top: 4em;
   color: #fff;
 }
 
 #signin p {
   color: #f6f6fe;
-}
-
-#signin form {
-  padding: 2.5em;
-}
-
-#signin input {
-  padding: 0.6em;
 }
 
 footer {
@@ -253,11 +243,18 @@ footer .contact-info span {
 }
 
 @media (min-width: 1280px) {
+  form {
+    padding: 1.8em 0;
+  }
+  p {
+    font-size: 16px;
+  }
   nav,
   #features,
   #team,
-  #signin {
-    padding: 2em 4em;
+  #signin,
+  footer {
+    padding: 2em 6em;
   }
   nav {
     font-size: 18px;
@@ -281,19 +278,24 @@ footer .contact-info span {
         -ms-flex-align: center;
             align-items: center;
   }
+  .text-wrapper {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .text-wrapper h1 {
+    font-size: 40px;
+  }
+  .text-wrapper p {
+    font-size: 18px;
+  }
   .text-wrapper h1,
   .text-wrapper h2,
   .text-wrapper p {
     text-align: left;
     padding: 0;
-  }
-  .text-wrapper h2 {
-    font-size: 26px;
-    font-weight: 400;
     padding-bottom: 0.5em;
-  }
-  .text-wrapper form {
-    padding: 1.8em 0;
   }
   .link-center {
     display: inline-block;
@@ -302,20 +304,26 @@ footer .contact-info span {
   }
   .card {
     margin: 0;
-    width: 50%;
+    width: 65%;
   }
   #features form {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 1fr 1fr;
-        grid-template-columns: 2fr 1fr 1fr;
+    -ms-grid-columns: 3fr 2fr 1fr;
+        grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 1em;
+  }
+  #team h2 {
+    font-size: 36px;
   }
   #signin .submit {
     width: 40%;
   }
   #signin .text-wrapper {
     width: 80%;
+  }
+  #signin h2 {
+    font-size: 26px;
   }
   .footer-grid {
     padding-top: 1em;

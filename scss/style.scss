@@ -72,7 +72,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6em;
   ul {
     display: flex;
     li {
@@ -140,16 +139,9 @@ nav {
 }
 #signin {
   background-color: $Desaturated-Blue;
-  padding-top: 4em;
   color: #fff;
   p {
     color: $Light-Grayish-Blue;
-  }
-  form {
-    padding: 2.5em;
-  }
-  input {
-    padding: 0.6em;
   }
 }
 footer {
@@ -180,11 +172,18 @@ footer {
 }
 
 @media (min-width: 1280px) {
+  form {
+    padding: 1.8em 0;
+  }
+  p {
+    font-size: 16px;
+  }
   nav,
   #features,
   #team,
-  #signin {
-    padding: 2em 4em;
+  #signin,
+  footer {
+    padding: 2em 6em;
   }
   nav {
     font-size: 18px;
@@ -198,7 +197,6 @@ footer {
       }
     }
   }
-
   #features,
   #team,
   #signin {
@@ -207,21 +205,22 @@ footer {
     grid-gap: 3em;
     align-items: center;
   }
+  //set this to the second div to reverse direction
   .text-wrapper {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
     h1,
     h2,
     p {
       text-align: left;
       padding: 0;
-    }
-
-    h2 {
-      font-size: 26px;
-      font-weight: 400;
       padding-bottom: 0.5em;
-    }
-    form {
-      padding: 1.8em 0;
     }
   }
 
@@ -232,13 +231,18 @@ footer {
   }
   .card {
     margin: 0;
-    width: 50%;
+    width: 65%;
   }
   #features {
     form {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 3fr 2fr 1fr;
       grid-gap: 1em;
+    }
+  }
+  #team {
+    h2 {
+      font-size: 36px;
     }
   }
   #signin {
@@ -247,6 +251,9 @@ footer {
     }
     .text-wrapper {
       width: 80%;
+    }
+    h2 {
+      font-size: 26px;
     }
   }
   .footer-grid {
