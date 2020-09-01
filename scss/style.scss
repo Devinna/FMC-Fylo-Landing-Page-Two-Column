@@ -101,6 +101,11 @@ nav {
     }
   }
 }
+.bg {
+  background: url(/images/bg-curve-mobile.svg) no-repeat;
+  background-size: cover;
+  height: 3em;
+}
 .submit {
   background-color: $Bright-Blue;
   border: none;
@@ -170,7 +175,26 @@ footer {
     }
   }
 }
-
+.attribution {
+  background-color: $Very-Dark-Blue;
+  color: $Light-Grayish-Blue;
+  a {
+    color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    font-size: 20px;
+    .logo {
+      width: 20%;
+    }
+  }
+  .bg {
+    background: url(/images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 4em;
+  }
+}
 @media (min-width: 1280px) {
   form {
     padding: 1.8em 0;
@@ -180,10 +204,12 @@ footer {
   }
   nav,
   #features,
-  #team,
+  #team {
+    padding: 2em 6em;
+  }
   #signin,
   footer {
-    padding: 2em 6em;
+    padding: 6em;
   }
   nav {
     font-size: 18px;
@@ -232,6 +258,9 @@ footer {
   .card {
     margin: 0;
     width: 65%;
+    p {
+      font-size: 14px;
+    }
   }
   #features {
     form {
@@ -244,6 +273,11 @@ footer {
     h2 {
       font-size: 36px;
     }
+  }
+  .bg {
+    background: url(/images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 5em;
   }
   #signin {
     .submit {
